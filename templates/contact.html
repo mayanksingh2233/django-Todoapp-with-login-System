@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+    {% block start %}
+    <h1>This is Contat page</h1>
+    <a href="{%url 'home'%}">
+    <button>Home</button>
+    </a>
+ 
+    <a href="{%url 'about'%}">
+    <button>About</button>
+    </a>
+
+    <ul>
+    {% for c in contacts %}
+        <li>{{forloop.counter}}.{{c.phone_number}} | {{c.address}} | {{c.email}}</li>
+        
+    {% endfor %}
+    </ul>
+    {% endblock start %}
+    

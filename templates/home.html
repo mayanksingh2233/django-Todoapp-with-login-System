@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+    {% block start %}
+    {% if logged == True%}
+    <h1>you are logged in</h1>
+    {% else %}
+    <h1>your are not logged in </h1>
+    
+    {% endif %}
+    <h1>This is home page!!!</h1>
+    <a href="{%url 'contact'%}">
+    <button>contact</button>
+    </a>
+
+    <a href="{%url 'about'%}">
+    <button>About</button>
+    </a>
+    {% endblock start %}

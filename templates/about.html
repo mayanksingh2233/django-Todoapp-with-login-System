@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+    {% block start %}
+    <h1>This is About page</h1>
+    <a href="{% url 'contact' %}">
+     <button>contact</button>
+    </a>
+
+    <a href="{%url 'home'%}">
+    <button>Home</button>
+    </a>
+    {% endblock start %}
